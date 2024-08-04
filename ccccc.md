@@ -5,4 +5,4 @@ A file is given containing:
 
 Based on the description and the name of the challenge, I decided to remove all "c"s from the string and then process the resulting string in CyberChef using the Magic recipe.
 
-`TFCCTF{cshout_cout_ct0_cmy_cb0y_c4nd_cmy_cdog_cand_cmy_cc47}}`
+`TFCCTF{cshout_cout_ct0_cmy_cb0y_c4nd_cmy_cdog_cand_cmy_cc47}`
