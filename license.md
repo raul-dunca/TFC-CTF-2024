@@ -95,7 +95,7 @@ int main() {
     return 0;
 }
 ```
-This returns `huG\?;uA` which does not work because the characters `\`, `?` and `;` remain the same since the code only apply the operations on alphabetical characters (lowercase or uppercase). Since the calculation involved a % (modulo) operation, we can just add `1a` to the hex values of the special characters until we het an alphabetical character, for example:
+This returns `huG\?;uA` which does not work because the characters `\`, `?` and `;` remain the same since the code only apply the operations on alphabetical characters (lowercase or uppercase). Since the calculation involved a % (modulo) operation, we can just add `1a` to the hex values of the special characters until we get an alphabetical character, for example:
 
 ```text
 \ = 0x5c 
