@@ -52,7 +52,7 @@ For the second part the following function must return 0:
 
 <img src=".images/f2.png">
 
-As we can see it is somehow similar to the first function except the operations applied on the characters and the logic are different. However, again the result is compared with a variable `data_4020`, whose value is `mzXaPLzR`. After creating a cpp file and actually running the program, I find out what the function actually does, and it can be written as:
+As we can see it is somehow similar to the first function except the operations applied on the characters and the logic are different. However, again the result is compared with a variable `data_4020`, whose value is `mzXaPLzR`. After creating a cpp file with the given function and running the program, I find out what is the actual logic behind it, and it can be written as:
 
 ```c++
 void sub_1345(char* arg1) {
