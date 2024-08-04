@@ -1,4 +1,4 @@
-![alt text](image-3.png)
+<img src=".images/conway.png">
 
 For this challenge two files are given, one containing the code:
 
