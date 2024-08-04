@@ -24,7 +24,7 @@ And one the output:
 f143845f3c4d9ad024ac8f76592352127651ff4d8c35e48ca9337422a0d7f20ec0c2baf530695c150efff20bbc17ca4c
 ```
 
-Seeing the first line in the output, the name and description of the task, I assumed that the `Look-and-Say Conway Sequence` was used by the generate_next_key function.
+Seeing the first line in the output, the name and description of the task, I assumed that the `Look-and-Say Conway Sequence` was used by the `generate_next_key` function.
 
 I tested it using: https://www.dcode.fr/conway-sequence and also generated the values of the variable `initial` (the value that is used to generate the key).
 
