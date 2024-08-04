@@ -1,4 +1,4 @@
-![alt text](image.png)
+<img src=".images/rules.png">
 
 Just read the rules of the ctf competition where the flag is present.
 
