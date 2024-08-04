@@ -1,4 +1,4 @@
-![alt text](image.png)
+<img src=".images/license.png">
 
 I used [dogbolt](https://dogbolt.org/) to decompile the given binary. The program asks for a license key and if given the correct one would yield the flag.
 In the main function an exactly 17 characters string is required with the 9th one being `-`.
@@ -6,7 +6,7 @@ The rest of the license key can be considered split in two: the first 8 bytes an
 
 For the first part, the following function must return 0:
 
-![alt text](image-4.png)
+<img src=".images/f1.png">
 
 It seems that the function performs various operations on each character after which the resulted string is compared with a variable `data_4010` and if the two match the function returns 0.
 Using `BinaryNinja` we can see that `char data_4010[0x9] = "Xsl3BDxP"` so we can reverse the logic of the function:
@@ -50,7 +50,7 @@ Which exists as expected (notice that the 9th byte is `X`). Thus the first part 
 
 For the second part the following function must return 0:
 
-![alt text](image-5.png)
+<img src=".images/f2.png">
 
 As we can see it is somehow similar to the first function except the operations applied on the characters and the logic are different. However, again the result is compared with a variable `data_4020`, whose value is `mzXaPLzR`. After creating a cpp file and actually running the program, I find out what the function actually does, and it can be written as:
 
