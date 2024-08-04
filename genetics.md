@@ -1,4 +1,4 @@
-![alt text](image.png)
+<img src=".images/genetics.png">
 
 Given the string `CCCA CACG CAAT CAAT CCCA CACG CTGT ATAC CCTT CTCT ATAC CGTA CGTA CCTT CGCT ATAT CTCA CCTT CTCA CGGA ATAC CTAT CCTT ATCA CTAT CCTT ATCA CCTT CTCA ATCA CTCA CTCA ATAA ATAA CCTT CCCG ATAT CTAG CTGC CCTT CTAT ATAA ATAA CGTG CTTC` and knowing that the flag format start with `TFCCTF{` we can use something that is called codon table (I found out during research). Basically, mapping each of the four characters present in the given string to binary. For example `T` in binary is `01010100` and given that the string starts with `CCCA` we can see that `C = 01` and `A = 00`. Thus, I created the following script to retrieve the flag:
 ```python
