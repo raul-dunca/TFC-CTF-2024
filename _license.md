@@ -42,7 +42,7 @@ int main() {
     return 0;
 }
 ```
-This will return (some characters are non-printable, so I provided hex values for those): `10\x84Za\x9C\x11S` (for example: \x84 - non-printable char, but 1 byte). Looking at the main function, I realized that I could test if this is the correct first part, because of the order of ifs. If I provide a 17 bytes string with the first 8 bytes being correct and the 9th not being `-` the program must exit without a "Nope" message being printed. So I ran:
+This will return (some characters are non-printable, so I provided hex values for those): `10\x84Za\x9C\x11S` (for example: \x84 - non-printable char, but 1 byte). Looking at the main function, I realized that I could test if this is the correct first part, because of the order of ifs. If I provide a 17 bytes string with the first 8 bytes being correct and the 9th different from `-` the program must exit without a "Nope" message being printed. So I ran:
 ```shell
 echo -e "10\x84Za\x9C\x11SX11112222" | ./license
 ```
