@@ -1,4 +1,4 @@
-<img src=".images/conway.png">
+<img src="https://github.com/raul-dunca/assets/blob/main/.images/conway.png?raw=true">
 
 For this challenge two files are given, one containing the code:
 
