@@ -1,4 +1,4 @@
-<img src=".images/rules.png">
+<img src="https://github.com/raul-dunca/assets/blob/main/.images/rules.png?raw=true">
 
 Just read the rules of the ctf competition where the flag is present.
 
