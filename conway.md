@@ -46,7 +46,6 @@ encrypted_message_hex = "f143845f3c4d9ad024ac8f76592352127651ff4d8c35e48ca933742
 
 encrypted_message = bytes.fromhex(encrypted_message_hex)
 
-
 decrypted_padded_message = cipher.decrypt(encrypted_message)
 
 flag = unpad(decrypted_padded_message, 16).decode()
