@@ -1,1 +1,1 @@
-# TFC-CTF-2024
+# TFC CTF 2024
