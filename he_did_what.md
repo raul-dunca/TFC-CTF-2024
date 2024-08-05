@@ -1,4 +1,4 @@
-<img src=".images/he_did_what.png">
+<img src="https://github.com/raul-dunca/assets/blob/main/.images/he_did_what.png?raw=true">
 
 In the `.evtx` file, I discovered very few PowerShell events which seemed obfuscated and suspicious. Putting the commands together results in:
 
