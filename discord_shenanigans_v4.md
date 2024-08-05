@@ -1,8 +1,8 @@
-<img src=".images/discord_shenanigans_v4.png">
+<img src="https://github.com/raul-dunca/assets/blob/main/.images/discord_shenanigans_v4.png?raw=true">
 
 At #bot-commands if you typed `/flag` a bot would reply:
 
-<img src=".images/bot.png">
+<img src="https://github.com/raul-dunca/assets/blob/main/.images/bot.png?raw=true">
 
 At first, I thought that a certain command was needed, after which the bot would DM you the flag. I even DM-ed the bot mysef, but no luck.
 
